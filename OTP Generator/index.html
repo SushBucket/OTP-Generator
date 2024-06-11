@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Generator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+        <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="header">
+                <h1>OTP Generator</h1>
+                <h2>OTP Verifiaction</h2>
+            </div>
+            <div class="content" id="content">
+                <button id="genbtn" onclick="OTPFn()">Generate OTP</button>
+                <div id="otpform" class="otp-form">
+                    <input type="text" id="userotp" placeholder="Enter the OTP">
+                    <button onclick="OTPVerifyFn()">Verify</button>
+                </div>
+                <div id="successmsg" class="success-msg">
+                    <i class="fas fa-check"></i>
+                    <p>OTP Verified!</p>
+                </div>
+                <div id="errormsg" class="error-msg"></div>
+                <div id="timer" class="timer"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
